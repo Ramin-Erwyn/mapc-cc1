@@ -1,0 +1,67 @@
+@startuml
+
+package serviceprovider.api{
+
+
+    interface serviceprovider.api.AppServerServiceType extends ServiceType{
+        + createService(String name) :Service
+        + serviceTypeKey() :String
+    }
+
+
+
+
+    enum BasicServiceTypeNames implements ServiceTypeName  {
+      APP_SERVER
+      LOGGING
+      MONITORING
+      STORAGE_SERVER
+      WEB_SERVER
+      +getName() :APP_SERVER
+      +getName() : LOGGING
+      +getName() : MONITORING
+      +getName() : STORAGE_SERVER
+      +getName() : WEB_SERVER
+
+    }
+
+
+
+
+    interface serviceprovider.api.LoggingServiceType extends ServiceType {
+        + createService(String name) :Service
+        + serviceTypeKey() :String
+    }
+
+
+
+
+    interface serviceprovider.api.MonitoringServiceType extends ServiceType {
+        + createService(String name) :Service
+        + serviceTypeKey() :String
+    }
+
+
+
+
+    interface serviceprovider.api.ServiceTypeName  extends ServiceType {
+       + getName() :String
+
+  }
+
+
+
+    interface serviceprovider.api.StorageServerServiceType extends ServiceType {
+        + createService(String name) : Service
+        + serviceTypeKey(): String
+ }
+
+
+
+    interface serviceprovider.api.WebServerServiceType extends ServiceType{
+        + createService(String name) :Service
+        + serviceTypeKey() :String
+  }
+}
+
+@enduml

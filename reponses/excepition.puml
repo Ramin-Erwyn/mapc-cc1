@@ -1,0 +1,8 @@
+@startuml
+
+ class exception.ResourceAlreadyExistsException {
+        + ResourceAlreadyExistsException(String s)
+        + ResourceAlreadyExistsException()
+        + ResourceAlreadyExistsException(String message, Throwable cause)
+    }
+@enduml

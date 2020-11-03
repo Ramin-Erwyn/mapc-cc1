@@ -1,0 +1,42 @@
+@startuml
+
+Package creation.cloudproviders.amiazon{
+
+    class creation.cloudproviders.amiazon.AmiazonCloud extends CloudImpl {
+        + AmiazonCloud(String name)
+    }
+
+
+
+
+    class creation.cloudproviders.amiazon.AmiazonCloudProvider implements CloudProvider{
+        - AMIAZON : String
+        + createCloud(String name) :Cloud
+        + createDeploymentPlan(String name) :DeploymentPlan
+        + getName() :String
+    }
+
+
+
+
+    class creation.cloudproviders.amiazon.AmiazonDeploymentPlanCreator implements DeploymentPlanCreator{
+         - INSTANCE : AmiazonDeploymentPlanCreator
+         - DEFAULT_APACHE : String
+         - DEFAULT_NGINX : String
+         - DEFAULT_TOMCAT : String
+         - DEFAULT_MYSQL : String
+         - DEFAULT_MONGODB : String
+         - DEFAULT_FLUME : String
+         - DEFAULT_PROMETHEUS :String
+         - DEFAULT_WEB_SERVER_SERVICE : String
+         - DEFAULT_APP_SERVER_SERVICE : String
+         - DEFAULT_STORAGE_SERVER_SERVICE : String
+         - DEFAULT_LOGGING_SERVER_SERVICE : String
+         - DEFAULT_MONITORING_SERVER_SERVICE : String
+         + AmiazonDeploymentPlanCreator()
+         + instance():AmiazonDeploymentPlanCreator
+         + createDeploymentPlan(String name) :DeploymentPlan
+  }
+}
+
+@enduml

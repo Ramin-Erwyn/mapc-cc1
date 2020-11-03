@@ -1,0 +1,156 @@
+@startuml
+
+  package Cloud.api {
+    interface Cloud.api.Cloud extends NamedElement {
+        + getPlans(DeploymentPlan plan) Set<DeploymentPlan>
+        + deployPlan(DeploymentPlan plan) :boolean
+        + startPlan(DeploymentPlan plan) :boolean
+        + stopPlan(DeploymentPlan plan) :boolean
+        + removePlan(DeploymentPlan plan) :boolean
+    }
+
+
+
+
+    interface Cloud.api.Component extends Resource, RunnableElement {
+        + getComponentType() :ComponentType
+    }
+
+
+
+
+    interface Cloud.api.ComponentType extends Resource{
+        + componentTypeKey() :String
+        + createComponent(String name) :Component
+    }
+
+
+
+
+    interface Cloud.api.ComputeNode extends Resource, RunnableElement{
+        + addVMachine(VirtualMachine machin) :boolean
+        + removeVMachine(VirtualMachine machin) :boolean
+        + getVMachines() Set<VirtualMachine>
+        + shutDownVMachine(VirtualMachine machin) :boolean
+        + startVirtualMachine(VirtualMachine machin) :boolean
+    }
+
+
+
+
+    interface Cloud.api.DeploymentPlan extends NamedElement, RunnableElement{
+
+        + newStandardComputeNode(StandardComputeNodeSize size, String name)
+        + newPersonalizedComputeNode(int nbCPU, int memory, String name)
+        + newVirtualMachine(String name)
+        + newService(String key, String name)
+        + newComponent(String key, String name)
+        + getNodes() Set<ComputeNode>
+        + getNode(String: name)
+        + deployVMonNode(VirtualMachine vm, ComputeNode node)
+        + deployServiceOnVm(Service service, VirtualMachine vm)
+        + attachComponentToService(Component component, Service service)
+        + isValid() :boolean
+        + getReport() :DeploymentPlanReport
+    }
+
+
+
+
+    interface Cloud.api.DeploymentPlanReport {
+         + addException(Exception e) :boolean
+         + exceptions() List<Exception>
+         + messages() List<String>
+    }
+
+
+
+
+    interface Cloud.api.DeploymentPlanShutdown {
+        + setNext(DeploymentPlanShutdown handler) :void
+        + stop(DeploymentPlan plan) :boolean
+    }
+
+
+
+
+    interface Cloud.api.DeploymentPlanStartup {
+         + setNext(DeploymentPlanStartup handler) :void
+         + start(DeploymentPlan plan, boolean bestEffort) :boolean
+    }
+
+
+
+
+    interface Cloud.api.NamedElement extends Visitable{
+        + name() :String
+    }
+
+
+
+
+    interface Cloud.api.Resource extends NamedElement{
+         + setNbCPU() :int
+         + getMemory() :int
+         + getNbCPU(int nbCPU) :void
+         + setMemory(int memory) :void
+    }
+
+
+
+
+    interface Cloud.api.RunnableElement {
+        + start() :boolean
+        + stop() :boolean
+        + isRunning() :boolean
+        + restart()
+  }
+
+
+
+    interface Cloud.api.Service extends Resource, RunnableElement{
+         + getComponent() :Component
+         + setComponent(Component component) :void
+         + getServiceType()
+  }
+
+
+
+    interface Cloud.api.ServiceType extends NamedElement {
+         + createService(String name) :String
+         + serviceTypeKey() :Service
+    }
+
+
+
+
+    enum Cloud.api.StandardComputeNodeSize {
+    - int :nbCPU
+    - int :memory
+
+     XSMALL
+     SMALL
+     MEDIUM
+     MEDIUM_LARGE
+     LARGE
+     XLARGE
+
+     +getNbCPU() :int
+     +getMemory() :int
+    }
+
+
+
+
+    interface Cloud.api.VirtualMachine  extends Resource, RunnableElement  {
+         + setOS(VmOSName os) :void
+         + getOS() :VmOSName
+         + addService(Service service) :boolean
+         + getServices(Service service):boolean
+         + removeService() Set<Service>
+
+    }
+  }
+
+
+@enduml

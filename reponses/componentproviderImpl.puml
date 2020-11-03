@@ -1,0 +1,58 @@
+@startuml
+
+package componentproviderImpl {
+    class componentproviderImpl.Apache extends ComponentImpl implements ApacheComponentType  {
+        + Apache(String name)
+        + getComponentType() :ComponentType
+    }
+  }
+
+
+
+    class componentproviderImpl.Flume extends ComponentImpl implements FlumeComponentType {
+        + Flume(String name)
+        + getComponentType() :ComponentType
+    }
+
+
+
+
+    class componentproviderImpl.MongoDb extends ComponentImpl implements MongoDBComponentType  {
+        + MongoDb(String name)
+        + getComponentType() :ComponentType
+    }
+
+
+
+
+    class componentproviderImpl.MySQL extends ComponentImpl implements MySQLComponentType{
+        + MySQL(String name)
+        + getComponentType():ComponentType
+    }
+
+
+
+
+    class componentproviderImpl.Nginx extends ComponentImpl implements NginxComponentType{
+        + Nginx(String name)
+        + getComponentType():ComponentType
+    }
+
+
+
+
+    class componentproviderImpl.Prometheus extends ComponentImpl implements PrometheusComponentType{
+        + Prometheus(String name)
+        + getComponentType():ComponentType
+    }
+
+
+
+
+    class componentproviderImpl.Tomcat extends ComponentImpl implements TomcatComponentType {
+        + Tomcat(String name)
+        + getComponentType():ComponentType
+    }
+
+
+@enduml

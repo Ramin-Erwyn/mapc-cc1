@@ -1,0 +1,18 @@
+@startuml
+
+package io{
+
+    class io.ServiceDefinitionLoader {
+      - SERVICES_PROPERTIES : String
+      - LOADER : ServiceDefinitionLoader
+      - REGEX : String
+      - properties : Properties
+        + instance():ServiceDefinitionLoader
+        + ServiceDefinitionLoader()
+        + serviceTypes() :Set<String>
+        + implementingComponentTypesOf(String serviceType):Optional<Set<String>>
+    }
+  }
+
+
+@enduml

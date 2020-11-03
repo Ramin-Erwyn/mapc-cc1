@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="370.5px" preserveAspectRatio="none" style="width:702px;height:370px;" version="1.1" viewBox="0 0 702 370" width="702px" zoomAndPan="magnify"><defs><filter height="300%" id="fadcnb304jpcz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="3.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="6.0" dy="6.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[41793ebf2473be711c2d2bac7d4ab610]
+cluster io--><polygon fill="#FFFFFF" filter="url(#fadcnb304jpcz)" points="33,36,61.5,36,72,71.4141,669,71.4141,669,352.5,33,352.5,33,36" style="stroke: #000000; stroke-width: 2.25;"/><line style="stroke: #000000; stroke-width: 2.25;" x1="33" x2="72" y1="71.4141" y2="71.4141"/><text fill="#000000" font-family="sans-serif" font-size="21" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="19.5" x="39" y="60.7998">io</text><!--MD5=[dec7d54062fc988ae1d58402832e8fd9]
+class io.ServiceDefinitionLoader--><rect fill="#FEFECE" filter="url(#fadcnb304jpcz)" height="238.0313" id="io.ServiceDefinitionLoader" style="stroke: #A80036; stroke-width: 2.25;" width="588" x="57" y="90"/><ellipse cx="246.375" cy="114" fill="#ADD1B2" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M249.375,108.75 Q249.6797,108 250.0313,107.625 Q250.3828,107.25 250.7813,107.25 Q251.4844,107.25 251.9297,107.6719 Q252.375,108.0938 252.375,109.0781 L252.375,111.4219 Q252.375,112.4063 251.9531,112.8281 Q251.5313,113.25 250.875,113.25 Q250.2891,113.25 249.9141,112.9922 Q249.5391,112.7344 249.375,112.0547 Q249.3047,111.5859 249.0469,111.3281 Q248.5781,110.8359 247.7344,110.5547 Q246.8906,110.25 246.0469,110.25 Q244.9922,110.25 244.1016,110.6719 Q243.2344,111.0938 242.5547,112.0313 Q241.875,112.9688 241.875,114.2578 L241.875,115.6406 Q241.875,117.1875 243.1406,118.2188 Q244.4063,119.25 246.6563,119.25 Q247.9922,119.25 248.9297,118.9453 Q249.4688,118.7813 250.0781,118.2422 Q250.4766,117.9375 250.6875,117.8438 Q250.8984,117.75 251.1563,117.75 Q251.6484,117.75 252,118.1484 Q252.375,118.5234 252.375,119.0625 Q252.375,119.5781 251.8594,120.1875 Q251.1094,121.0781 249.9141,121.5703 Q248.3438,122.25 246.4219,122.25 Q244.1719,122.25 242.3672,121.3594 Q240.9141,120.6563 239.8828,119.1328 Q238.875,117.6094 238.875,115.8047 L238.875,114.1641 Q238.875,112.2891 239.7656,110.6484 Q240.6797,109.0078 242.25,108.1406 Q243.8438,107.25 245.625,107.25 Q246.7031,107.25 247.6406,107.625 Q248.5781,108 249.375,108.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="196.5" x="277.125" y="121.3652">ServiceDefinitionLoader</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="643.5" y1="138" y2="138"/><rect fill="none" height="9" style="stroke: #C82930; stroke-width: 1.5;" width="9" x="69" y="150"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="87" y="161.1284">SERVICES_PROPERTIES : String</text><rect fill="none" height="9" style="stroke: #C82930; stroke-width: 1.5;" width="9" x="69" y="170.7539"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="249" x="87" y="181.8823">LOADER : ServiceDefinitionLoader</text><rect fill="none" height="9" style="stroke: #C82930; stroke-width: 1.5;" width="9" x="69" y="191.5078"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="106.5" x="87" y="202.6362">REGEX : String</text><rect fill="none" height="9" style="stroke: #C82930; stroke-width: 1.5;" width="9" x="69" y="212.2617"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="160.5" x="87" y="223.3901">properties : Properties</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="643.5" y1="233.0156" y2="233.0156"/><ellipse cx="73.5" cy="249.5156" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="250.5" x="87" y="256.144">instance():ServiceDefinitionLoader</text><ellipse cx="73.5" cy="270.2695" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="184.5" x="87" y="276.8979">ServiceDefinitionLoader()</text><ellipse cx="73.5" cy="291.0234" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="204" x="87" y="297.6519">serviceTypes() :Set&lt;String&gt;</text><ellipse cx="73.5" cy="311.7773" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="549" x="87" y="318.4058">implementingComponentTypesOf(String serviceType):Optional&lt;Set&lt;String&gt;&gt;</text><!--MD5=[c77fce0e3506ba6cc607bfe1eb6f71e2]
+@startuml
+
+package io{
+ 
+    class io.ServiceDefinitionLoader {
+      - SERVICES_PROPERTIES : String
+      - LOADER : ServiceDefinitionLoader
+      - REGEX : String
+      - properties : Properties  
+        + instance():ServiceDefinitionLoader
+        + ServiceDefinitionLoader()
+        + serviceTypes() :Set<String>
+        + implementingComponentTypesOf(String serviceType):Optional<Set<String>>
+    }
+  }
+
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 12:51:06 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-b944.31
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

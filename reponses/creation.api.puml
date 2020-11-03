@@ -1,0 +1,45 @@
+@startuml
+
+package creation.api {
+    interface creation.api.CloudProvider {
+       + createCloud(String name) :Cloud
+       + createDeploymentPlan(String name) :DeploymentPlan
+       + getName() :String
+    }
+
+
+
+
+    interface creation.api.ComponentCreator {
+   + createComponent(ComponentType type, String name) :Component
+    }
+
+
+
+
+    interface creation.api.ComputeNodeCreator {
+      + createComputeNode(int nbCPU, int memory, String name) :ComputeNode
+    }
+
+
+
+
+    interface creation.api.DeploymentPlanCreator {
+         + createDeploymentPlan(String name) :DeploymentPlan
+    }
+
+
+
+
+    interface creation.api.ServiceCreator {
+       + createService(ServiceType type, String name) :Service
+    }
+
+
+
+
+    interface creation.api.VirtualMachineCreator {
+     + createVirtualMachine(String name):VirtualMachine
+    }
+}
+@enduml

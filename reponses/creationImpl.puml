@@ -1,0 +1,11 @@
+@startuml
+
+ package creationImpl {
+    class creationImpl.CloudProviderLoader {
+         - LOADER : ServiceLoader<CloudProvider>
+         + providers(boolean refresh):Iterator<CloudProvider>
+         + CloudProviderLoader()
+    }
+}
+
+@enduml

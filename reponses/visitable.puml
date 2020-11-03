@@ -1,0 +1,10 @@
+@startuml
+
+package visitable.api{
+
+interface visitable.api.Visitable {
+        + accept(Visitor visitor) :void
+    }
+}
+
+@enduml

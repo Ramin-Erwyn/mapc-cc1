@@ -1,0 +1,55 @@
+@startuml
+
+package shutdown{
+
+    class cloud.impl.shutdown.ApplicationServiceShutdown  extends ServiceShutdown{
+        + ApplicationServiceShutdown()
+    }
+
+
+
+
+    class cloud.impl.shutdown.ComputeNodeShutdown extends DeploymentPlanShutdownImpl{
+        - allShutdown : boolean
+        + ComputeNodeShutdown()
+        + stop()
+    }
+
+
+
+
+    class cloud.impl.shutdown.LoggingServiceShutdown extends ServiceShutdown{
+        + LoggingServiceShutdown()
+    }
+
+
+
+
+    class cloud.impl.shutdown.MonitoringServiceShutdown  extends ServiceShutdown{
+        + MonitoringServiceShutdown()
+    }
+
+
+
+    class cloud.impl.shutdown.StorageServiceShutdown extends ServiceShutdown{
+        + StorageServiceShutdown()
+    }
+
+
+
+
+    class cloud.impl.shutdown.VirtualMachineShutdown extends DeploymentPlanShutdownImpl{
+        - allShutdown : boolean
+        + VirtualMachineShutdown()
+        + stop()
+    }
+
+
+
+
+    class cloud.impl.shutdown.WebServiceShutdown extends ServiceShutdown{
+        + WebServiceShutdown()
+    }
+
+}
+@enduml

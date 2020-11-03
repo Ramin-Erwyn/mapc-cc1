@@ -1,0 +1,47 @@
+@startuml
+
+package serviceprovider.impl{
+
+
+    class serviceprovider.impl.DefaultAppServerService extends ServiceImpl implements AppServerServiceType  {
+        + DefaultAppServerService(String name)
+        + getServiceType() :ServiceType
+    }
+
+
+
+
+    class serviceprovider.impl.DefaultLoggingService extends ServiceImpl implements LoggingServiceType  {
+        + DefaultLoggingService(String name)
+        + getServiceType() :ServiceType
+    }
+
+
+
+
+    class serviceprovider.impl.DefaultMonitoringService extends ServiceImpl implements MonitoringServiceType {
+        + DefaultMonitoringService(String name)
+        + getServiceType() :ServiceType
+
+  }
+
+
+
+    class serviceprovider.impl.DefaultStorageServerService extends ServiceImpl implements StorageServerServiceType {
+        + DefaultStorageServerService(String name)
+        + getServiceType() :ServiceType
+    }
+
+
+
+
+    class serviceprovider.impl.DefaultWebServerService extends ServiceImpl implements WebServerServiceType{
+        + DefaultWebServerService(String name)
+        + getServiceType() :ServiceType
+
+  }
+
+
+}
+
+@enduml

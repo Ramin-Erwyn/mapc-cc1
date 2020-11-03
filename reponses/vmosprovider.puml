@@ -1,0 +1,22 @@
+@startuml
+
+package vmosprovider.api  {
+    enum DefaultOSNames implements vmosprovider.api.VmOSName{
+      CENTOS_8_1
+      DEBIAN_10_6
+      FEDORA_31
+      UBUNTU_18_10
+      +getName(): CENTOS_8_1
+      +getName(): DEBIAN_10_6
+      +getName(): FEDORA_31
+      +getName(): UBUNTU_18_10
+    }
+
+
+
+    interface vmosprovider.api.VmOSName {
+       + getName() :String
+    }
+
+
+@enduml

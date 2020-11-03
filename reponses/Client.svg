@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="204px" preserveAspectRatio="none" style="width:204px;height:204px;" version="1.1" viewBox="0 0 204 204" width="204px" zoomAndPan="magnify"><defs><filter height="300%" id="f1t3zi2emp2t5a" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="3.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="6.0" dy="6.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[aa2f05b2676d7d34ffa7e771fb7634f3]
+cluster client--><polygon fill="#FFFFFF" filter="url(#f1t3zi2emp2t5a)" points="33,36,100.5,36,111,71.4141,171,71.4141,171,186,33,186,33,36" style="stroke: #000000; stroke-width: 2.25;"/><line style="stroke: #000000; stroke-width: 2.25;" x1="33" x2="111" y1="71.4141" y2="71.4141"/><text fill="#000000" font-family="sans-serif" font-size="21" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="58.5" x="39" y="60.7998">client</text><!--MD5=[4520fda4e10d4d791ce48fe025810cd4]
+class main--><rect fill="#FEFECE" filter="url(#f1t3zi2emp2t5a)" height="72" id="main" style="stroke: #A80036; stroke-width: 2.25;" width="90" x="57" y="90"/><ellipse cx="79.5" cy="114" fill="#ADD1B2" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M82.5,108.75 Q82.8047,108 83.1563,107.625 Q83.5078,107.25 83.9063,107.25 Q84.6094,107.25 85.0547,107.6719 Q85.5,108.0938 85.5,109.0781 L85.5,111.4219 Q85.5,112.4063 85.0781,112.8281 Q84.6563,113.25 84,113.25 Q83.4141,113.25 83.0391,112.9922 Q82.6641,112.7344 82.5,112.0547 Q82.4297,111.5859 82.1719,111.3281 Q81.7031,110.8359 80.8594,110.5547 Q80.0156,110.25 79.1719,110.25 Q78.1172,110.25 77.2266,110.6719 Q76.3594,111.0938 75.6797,112.0313 Q75,112.9688 75,114.2578 L75,115.6406 Q75,117.1875 76.2656,118.2188 Q77.5313,119.25 79.7813,119.25 Q81.1172,119.25 82.0547,118.9453 Q82.5938,118.7813 83.2031,118.2422 Q83.6016,117.9375 83.8125,117.8438 Q84.0234,117.75 84.2813,117.75 Q84.7734,117.75 85.125,118.1484 Q85.5,118.5234 85.5,119.0625 Q85.5,119.5781 84.9844,120.1875 Q84.2344,121.0781 83.0391,121.5703 Q81.4688,122.25 79.5469,122.25 Q77.2969,122.25 75.4922,121.3594 Q74.0391,120.6563 73.0078,119.1328 Q72,117.6094 72,115.8047 L72,114.1641 Q72,112.2891 72.8906,110.6484 Q73.8047,109.0078 75.375,108.1406 Q76.9688,107.25 78.75,107.25 Q79.8281,107.25 80.7656,107.625 Q81.7031,108 82.5,108.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="42" x="100.5" y="121.3652">main</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="145.5" y1="138" y2="138"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="145.5" y1="150" y2="150"/><!--MD5=[6426a0b29193a6c75178408e74a495b1]
+@startuml
+
+package client{
+class main{
+}
+}
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 12:51:06 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-b944.31
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

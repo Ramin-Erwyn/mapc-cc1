@@ -1,0 +1,9 @@
+@startuml
+
+package visitable.impl {
+    abstract class visitable.impl.VisitableImpl  implements Visitable {
+        + accept(Visitor visitor) :void
+    }
+  }
+
+@enduml

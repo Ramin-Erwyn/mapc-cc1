@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="450px" preserveAspectRatio="none" style="width:1713px;height:450px;" version="1.1" viewBox="0 0 1713 450" width="1713px" zoomAndPan="magnify"><defs><filter height="300%" id="fw6t09ulq0nag" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="3.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="6.0" dy="6.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e3dcb6748ae32116a1e4d2b47bdc7990]
+cluster creation.api--><polygon fill="#FFFFFF" filter="url(#fw6t09ulq0nag)" points="33,36,166.5,36,177,71.4141,1680,71.4141,1680,432,33,432,33,36" style="stroke: #000000; stroke-width: 2.25;"/><line style="stroke: #000000; stroke-width: 2.25;" x1="33" x2="177" y1="71.4141" y2="71.4141"/><text fill="#000000" font-family="sans-serif" font-size="21" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="124.5" x="39" y="60.7998">creation.api</text><!--MD5=[98939ad26e1a69a18538c96e1fa662c2]
+class creation.api.CloudProvider--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="134.2617" id="creation.api.CloudProvider" style="stroke: #A80036; stroke-width: 2.25;" width="420" x="57" y="90"/><ellipse cx="201.375" cy="114" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M202.875,109.5 L202.875,118.5 L205.875,118.5 L206.6016,118.5 L207.375,119.4375 L207.375,120 L207.375,120.5625 L206.6016,121.5 L205.875,121.5 L196.875,121.5 L196.1484,121.5 L195.375,120.5625 L195.375,120 L195.375,119.4375 L196.1484,118.5 L196.875,118.5 L199.875,118.5 L199.875,109.5 L196.875,109.5 L196.1484,109.5 L195.375,108.5625 L195.375,108 L195.375,107.4375 L196.1484,106.5 L196.875,106.5 L205.875,106.5 L206.6016,106.5 L207.375,107.4375 L207.375,108 L207.375,108.5625 L206.6016,109.5 L205.875,109.5 L202.875,109.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="118.5" x="232.125" y="121.3652">CloudProvider</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="475.5" y1="138" y2="138"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="475.5" y1="150" y2="150"/><ellipse cx="73.5" cy="166.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="234" x="87" y="173.1284">createCloud(String name) :Cloud</text><ellipse cx="73.5" cy="187.2539" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="381" x="87" y="193.8823">createDeploymentPlan(String name) :DeploymentPlan</text><ellipse cx="73.5" cy="208.0078" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="126" x="87" y="214.6362">getName() :String</text><!--MD5=[17e285ae444a0b6f1220fcb730437fc7]
+class creation.api.ComponentCreator--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="92.7539" id="creation.api.ComponentCreator" style="stroke: #A80036; stroke-width: 2.25;" width="516" x="529.5" y="111"/><ellipse cx="701.625" cy="135" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M703.125,130.5 L703.125,139.5 L706.125,139.5 L706.8516,139.5 L707.625,140.4375 L707.625,141 L707.625,141.5625 L706.8516,142.5 L706.125,142.5 L697.125,142.5 L696.3984,142.5 L695.625,141.5625 L695.625,141 L695.625,140.4375 L696.3984,139.5 L697.125,139.5 L700.125,139.5 L700.125,130.5 L697.125,130.5 L696.3984,130.5 L695.625,129.5625 L695.625,129 L695.625,128.4375 L696.3984,127.5 L697.125,127.5 L706.125,127.5 L706.8516,127.5 L707.625,128.4375 L707.625,129 L707.625,129.5625 L706.8516,130.5 L706.125,130.5 L703.125,130.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="159" x="732.375" y="142.3652">ComponentCreator</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="531" x2="1044" y1="159" y2="159"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="531" x2="1044" y1="171" y2="171"/><ellipse cx="546" cy="187.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="477" x="559.5" y="194.1284">createComponent(ComponentType type, String name) :Component</text><!--MD5=[e9215e4db20514b208f9d27edb57de74]
+class creation.api.ComputeNodeCreator--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="92.7539" id="creation.api.ComputeNodeCreator" style="stroke: #A80036; stroke-width: 2.25;" width="558" x="1098" y="111"/><ellipse cx="1279.125" cy="135" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M1280.625,130.5 L1280.625,139.5 L1283.625,139.5 L1284.3516,139.5 L1285.125,140.4375 L1285.125,141 L1285.125,141.5625 L1284.3516,142.5 L1283.625,142.5 L1274.625,142.5 L1273.8984,142.5 L1273.125,141.5625 L1273.125,141 L1273.125,140.4375 L1273.8984,139.5 L1274.625,139.5 L1277.625,139.5 L1277.625,130.5 L1274.625,130.5 L1273.8984,130.5 L1273.125,129.5625 L1273.125,129 L1273.125,128.4375 L1273.8984,127.5 L1274.625,127.5 L1283.625,127.5 L1284.3516,127.5 L1285.125,128.4375 L1285.125,129 L1285.125,129.5625 L1284.3516,130.5 L1283.625,130.5 L1280.625,130.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="1309.875" y="142.3652">ComputeNodeCreator</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1099.5" x2="1654.5" y1="159" y2="159"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="1099.5" x2="1654.5" y1="171" y2="171"/><ellipse cx="1114.5" cy="187.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="519" x="1128" y="194.1284">createComputeNode(int nbCPU, int memory, String name) :ComputeNode</text><!--MD5=[df815caa8f4bd07dbc4243fedf9e0220]
+class creation.api.DeploymentPlanCreator--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="92.7539" id="creation.api.DeploymentPlanCreator" style="stroke: #A80036; stroke-width: 2.25;" width="420" x="57" y="315"/><ellipse cx="160.875" cy="339" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M162.375,334.5 L162.375,343.5 L165.375,343.5 L166.1016,343.5 L166.875,344.4375 L166.875,345 L166.875,345.5625 L166.1016,346.5 L165.375,346.5 L156.375,346.5 L155.6484,346.5 L154.875,345.5625 L154.875,345 L154.875,344.4375 L155.6484,343.5 L156.375,343.5 L159.375,343.5 L159.375,334.5 L156.375,334.5 L155.6484,334.5 L154.875,333.5625 L154.875,333 L154.875,332.4375 L155.6484,331.5 L156.375,331.5 L165.375,331.5 L166.1016,331.5 L166.875,332.4375 L166.875,333 L166.875,333.5625 L166.1016,334.5 L165.375,334.5 L162.375,334.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="199.5" x="191.625" y="346.3652">DeploymentPlanCreator</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="475.5" y1="363" y2="363"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="58.5" x2="475.5" y1="375" y2="375"/><ellipse cx="73.5" cy="391.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="381" x="87" y="398.1284">createDeploymentPlan(String name) :DeploymentPlan</text><!--MD5=[72f22a0e781f8d0deea1e313c1ba0eb4]
+class creation.api.ServiceCreator--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="92.7539" id="creation.api.ServiceCreator" style="stroke: #A80036; stroke-width: 2.25;" width="439.5" x="530.25" y="315"/><ellipse cx="682.125" cy="339" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M683.625,334.5 L683.625,343.5 L686.625,343.5 L687.3516,343.5 L688.125,344.4375 L688.125,345 L688.125,345.5625 L687.3516,346.5 L686.625,346.5 L677.625,346.5 L676.8984,346.5 L676.125,345.5625 L676.125,345 L676.125,344.4375 L676.8984,343.5 L677.625,343.5 L680.625,343.5 L680.625,334.5 L677.625,334.5 L676.8984,334.5 L676.125,333.5625 L676.125,333 L676.125,332.4375 L676.8984,331.5 L677.625,331.5 L686.625,331.5 L687.3516,331.5 L688.125,332.4375 L688.125,333 L688.125,333.5625 L687.3516,334.5 L686.625,334.5 L683.625,334.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="123" x="712.875" y="346.3652">ServiceCreator</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="531.75" x2="968.25" y1="363" y2="363"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="531.75" x2="968.25" y1="375" y2="375"/><ellipse cx="546.75" cy="391.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="400.5" x="560.25" y="398.1284">createService(ServiceType type, String name) :Service</text><!--MD5=[1e9ece2b8b0ef732a7f571228b1719b9]
+class creation.api.VirtualMachineCreator--><rect fill="#FEFECE" filter="url(#fw6t09ulq0nag)" height="92.7539" id="creation.api.VirtualMachineCreator" style="stroke: #A80036; stroke-width: 2.25;" width="400.5" x="1022.25" y="315"/><ellipse cx="1124.625" cy="339" fill="#B4A7E5" rx="16.5" ry="16.5" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M1126.125,334.5 L1126.125,343.5 L1129.125,343.5 L1129.8516,343.5 L1130.625,344.4375 L1130.625,345 L1130.625,345.5625 L1129.8516,346.5 L1129.125,346.5 L1120.125,346.5 L1119.3984,346.5 L1118.625,345.5625 L1118.625,345 L1118.625,344.4375 L1119.3984,343.5 L1120.125,343.5 L1123.125,343.5 L1123.125,334.5 L1120.125,334.5 L1119.3984,334.5 L1118.625,333.5625 L1118.625,333 L1118.625,332.4375 L1119.3984,331.5 L1120.125,331.5 L1129.125,331.5 L1129.8516,331.5 L1130.625,332.4375 L1130.625,333 L1130.625,333.5625 L1129.8516,334.5 L1129.125,334.5 L1126.125,334.5 Z "/><text fill="#000000" font-family="sans-serif" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="1155.375" y="346.3652">VirtualMachineCreator</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1023.75" x2="1421.25" y1="363" y2="363"/><line style="stroke: #A80036; stroke-width: 2.25;" x1="1023.75" x2="1421.25" y1="375" y2="375"/><ellipse cx="1038.75" cy="391.5" fill="#84BE84" rx="4.5" ry="4.5" style="stroke: #038048; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="361.5" x="1052.25" y="398.1284">createVirtualMachine(String name):VirtualMachine</text><!--MD5=[7d972f7927be86db5b7e8bf5189bfbf6]
+link creation.api.CloudProvider to creation.api.ComponentCreator--><!--MD5=[c69b37b0b9814b5d9640332b264c9518]
+link creation.api.ComponentCreator to creation.api.ComputeNodeCreator--><!--MD5=[6820459e2cd73a880c98a0e49301649c]
+link creation.api.CloudProvider to creation.api.DeploymentPlanCreator--><!--MD5=[ecf35dfa2978ad9c8b0bb38c059c0c83]
+link creation.api.DeploymentPlanCreator to creation.api.ServiceCreator--><!--MD5=[f54c5c59d97f4ee358676915e4f15436]
+link creation.api.ServiceCreator to creation.api.VirtualMachineCreator--><!--MD5=[8c78b469e73785aaeafd1c9ab1e8be27]
+@startuml
+
+package creation.api {
+    interface creation.api.CloudProvider {
+       + createCloud(String name) :Cloud
+       + createDeploymentPlan(String name) :DeploymentPlan
+       + getName() :String
+    }
+
+
+
+
+    interface creation.api.ComponentCreator {
+   + createComponent(ComponentType type, String name) :Component
+    }
+
+
+
+
+    interface creation.api.ComputeNodeCreator {
+      + createComputeNode(int nbCPU, int memory, String name) :ComputeNode
+    }
+
+
+
+
+    interface creation.api.DeploymentPlanCreator {
+         + createDeploymentPlan(String name) :DeploymentPlan
+    }
+
+
+
+
+    interface creation.api.ServiceCreator {
+       + createService(ServiceType type, String name) :Service
+    }
+
+
+
+
+    interface creation.api.VirtualMachineCreator {
+     + createVirtualMachine(String name):VirtualMachine
+    }
+}
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 12:51:06 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.8+10-b944.31
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: fr
+Country: FR
+--></g></svg>

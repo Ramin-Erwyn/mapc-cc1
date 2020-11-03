@@ -1,0 +1,8 @@
+@startuml
+
+package client{
+class main{
+}
+}
+
+@enduml

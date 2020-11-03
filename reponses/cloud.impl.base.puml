@@ -1,0 +1,232 @@
+@startuml
+
+package cloud.impl.base{
+
+    abstract class cloud.impl.base.CloudImpl extends NamedElementImpl implements Cloud {
+        - plans : Set<DeploymentPlan>
+        + CloudImpl(String name)
+        + deployPlan(DeploymentPlan plan):boolean
+        + getPlans():Set<DeploymentPlan>
+        + removePlan(DeploymentPlan plan):boolean
+        + startPlan(DeploymentPlan plan):boolean
+        + stopPlan(DeploymentPlan plan):boolean
+    }
+
+
+
+
+    abstract class cloud.impl.base.ComponentImpl extends NamedElementImpl implements Component{
+        - runnable :DefaultRunnableElement
+         - resource :DefaultResource
+        + ComponentImpl(String name)
+        + getMemory() :int
+        + getNbCPU():int
+        + isRunning():void
+        + setMemory(int memory):void
+        + setNbCPU(int nbCPU):void
+        + start():boolean
+        + stop():boolean
+    }
+
+
+
+
+    abstract class cloud.impl.base.ComputeNodeImpl extends NamedElementImpl implements ComputeNode {
+         - resource :DefaultResource
+         -runnable :DefaultRunnableElement
+         -vmachines :Set<VirtualMachine>
+        - remainingCPU : int
+        - remainingMemory : int
+
+
+
+        + ComputeNodeImpl(String name)
+        + addVMachine(VirtualMachine machine):boolean
+        + getMemory(int memory)
+        + getNbCPU(int nbCPU)
+        + getVMachines():Set<VirtualMachine>
+        + isRunning()
+        + removeVMachine(VirtualMachine machine):boolean
+        + setMemory()
+        + setNbCPU()
+        + shutDownVMachine(VirtualMachine machine):boolean
+        + start()
+        + startVirtualMachine(VirtualMachine machine):boolean
+        + stop()
+    }
+
+
+
+
+    class cloud.impl.base.DefaultComputeNode extends ComputeNodeImpl{
+        + DefaultComputeNode(String name)
+    }
+
+
+
+
+    class cloud.impl.base.DefaultDeploymentPlan extends DeploymentPlanImpl{
+        + DefaultDeploymentPlan()
+        + isRunning()
+        + start()
+        + stop()
+    }
+
+
+
+
+    class cloud.impl.base.DefaultDeploymentPlanReport extends DeploymentPlanReportImpl{
+    }
+
+
+
+
+    class cloud.impl.base.DefaultResource extends ResourceImpl{
+        + DefaultResource()
+    }
+
+
+
+     class cloud.impl.base.DefaultRunnableElement extends RunnableElementImpl {
+    }
+
+
+
+     class cloud.impl.base.DefaultVirtualMachine extends VirtualMachineImpl{
+        + DefaultVirtualMachine()
+    }
+
+
+
+     abstract class cloud.impl.base.DeploymentPlanImpl extends NamedElementImpl implements DeploymentPlan {
+        - nodeMap : Map<String, ComputeNode>
+        - checkExistingResource()
+        + DeploymentPlanImpl()
+        + attachComponentToService()
+        + deployServiceOnVm()
+        + deployVMonNode()
+        + getNode()
+        + getNodes()
+        + getReport()
+        + isValid()
+        + newComponent()
+        + newPersonalizedComputeNode()
+        + newService()
+        + newStandardComputeNode()
+        + newVirtualMachine()
+
+    }
+
+
+
+     abstract class cloud.impl.base.DeploymentPlanReportImpl implements DeploymentPlanReport{
+        - exceptions : List<Exception>
+        - messages : List<String>
+        + DeploymentPlanReportImpl()
+        + addException()
+        + exceptions()
+        + messages()
+    }
+
+
+
+     abstract class cloud.impl.base.DeploymentPlanShutdownImpl implements DeploymentPlanShutdown {
+        + setNext()
+        + stop()
+    }
+
+
+
+     abstract class cloud.impl.base.DeploymentPlanStartupImpl implements DeploymentPlanStartup {
+        + setNext()
+        + start()
+    }
+
+
+
+     abstract class cloud.impl.base.NamedElementImpl extends VisitableImpl implements NamedElement{
+        - name : String
+        + NamedElementImpl()
+        + equals()
+        + hashCode()
+        + name()
+        + toString()
+    }
+
+
+
+     abstract class cloud.impl.base.ResourceImpl extends NamedElementImpl implements Resource{
+        - memory : int
+        - nbCPU : int
+        + ResourceImpl()
+        + getMemory()
+        + getNbCPU()
+        + setMemory()
+        + setNbCPU()
+    }
+
+
+     abstract class cloud.impl.base.RunnableElementImpl implements RunnableElement{
+        - isRunning : boolean
+        + isRunning()
+        + start()
+        + stop()
+    }
+
+
+
+     abstract class cloud.impl.base.ServiceImpl extends NamedElementImpl implements Service{
+        + ServiceImpl()
+        + getComponent()
+        + getMemory()
+        + getNbCPU()
+        + isRunning()
+        + setComponent()
+        + setMemory()
+        + setNbCPU()
+        + start()
+        + stop()
+    }
+
+
+
+     abstract class cloud.impl.base.ServiceShutdown extends DeploymentPlanShutdownImpl{
+        - allShutdown : boolean
+        - serviceTypeKey : String
+        + ServiceShutdown()
+        + getServiceTypeKey()
+        + setServiceTypeKey()
+        + stop()
+    }
+
+
+
+     abstract class cloud.impl.base.ServiceStartup extends DeploymentPlanStartupImpl{
+        - allStarted : boolean
+        - serviceTypeKey : String
+        - continueStartupProcess()
+        + ServiceStartup()
+        + setServiceTypeKey()
+        + start()
+
+    }
+
+
+     abstract class cloud.impl.base.VirtualMachineImpl extends NamedElementImpl implements VirtualMachine{
+        - services : Set<Service>
+        + VirtualMachineImpl()
+        + addService()
+        + getMemory()
+        + getNbCPU()
+        + getOS()
+        + getServices()
+        + isRunning()
+        + removeService()
+        + setMemory()
+        + setNbCPU()
+        + setOS()
+        + start()
+        + stop()
+
+  }
+@enduml

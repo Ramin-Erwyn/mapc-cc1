@@ -1,0 +1,33 @@
+@startuml
+
+package registry{
+
+    class registry.ComponentTypeRegistry {
+        - INSTANCE : ComponentTypeRegistry
+        - cTypeRegistry : Map<String, ComponentType>
+        - cTypeSTypeRegistry : Map<ComponentType, ServiceType>
+
+        + getComponentTypeOf(String key) :Optional<ComponentType>
+        + instance() :ComponentTypeRegistry :static
+        + registerComponentType(ComponentType componentType) :void
+        + ComponentTypeRegistry()
+    }
+
+
+
+
+    class registry.ServiceTypeRegistry {
+        - INSTANCE : ServiceTypeRegistry
+        - registry : Map<String, ServiceType>
+        + instance() :ServiceTypeRegistry
+        + ServiceTypeRegistry(ServiceType serviceType):void
+        + getServiceTypeOf(String key) :Optional<ServiceType>
+        + getServiceTypes() :Optional<List<ServiceType>>
+        + registerServiceType(ServiceType serviceType)
+
+
+  }
+
+
+}
+@enduml

@@ -1,0 +1,69 @@
+@startuml
+  package componentprovider.api {
+
+
+    interface componentprovider.api.ApacheComponentType extends ComponentType {
+        - APACHE : String
+        + componentTypeKey() :String
+        + createComponent(String name) :Component
+    }
+
+
+
+
+    interface componentprovider.api.FlumeComponentType extends ComponentType {
+        - FLUME : String
+        + componentTypeKey() :String
+        + createComponent(String name)  :Component
+    }
+
+
+
+
+    interface componentprovider.api.MongoDBComponentType extends ComponentType{
+        - MONGODB : String
+        + componentTypeKey() :String
+        + createComponent(String name):Component
+    }
+
+
+
+
+    interface componentprovider.api.MySQLComponentType extends ComponentType{
+        - MYSQL : String
+        + componentTypeKey() :String
+        + createComponent(String name):Component
+    }
+
+
+
+
+    interface componentprovider.api.NginxComponentType  extends ComponentType{
+        - NGINX : String
+        + componentTypeKey() :String
+        + createComponent(String name) :Component
+    }
+
+
+
+
+    interface componentprovider.api.PrometheusComponentType extends ComponentType{
+        - PROMETHEUS : String
+        + componentTypeKey() :String
+        + createComponent(String name) :Component
+    }
+
+
+
+
+    interface componentprovider.api.TomcatComponentType extends ComponentType {
+        - TOMCAT : String
+        + componentTypeKey():String
+        + createComponent(String name):Component
+    }
+
+
+  }
+
+
+@enduml
